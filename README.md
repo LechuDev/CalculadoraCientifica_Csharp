@@ -1,4 +1,6 @@
-# 🔢 Calculadora Científica – Jorge A. Fuentes (Lechu)
+# 🔢 Calculadora Científica – con C#
+
+por Jorge A. Fuentes (Lechu)
 
 Este proyecto forma parte de mi **portafolio 2026**.  
 Es una calculadora científica desarrollada en **C#** con **WinForms**, que incluye alternancia entre **modo claro y modo oscuro**.

@@ -6,7 +6,7 @@ namespace CalculadoraCientifica
 {
     public partial class CalculatorForm : Form
     {
-        private bool darkMode = false;
+        private bool darkMode = true;
 
         public CalculatorForm()
         {
@@ -24,7 +24,7 @@ namespace CalculadoraCientifica
         {
             if (darkMode)
             {
-                this.BackColor = Color.FromArgb(30, 30, 30);
+                this.BackColor = Color.FromArgb(20, 20, 20);
                 this.ForeColor = Color.White;
             }
             else
@@ -50,5 +50,13 @@ namespace CalculadoraCientifica
         private double LogaritmoBase10(double x) => Math.Log10(x);
         private double Exponencial(double x) => Math.Exp(x);
         private double ValorAbsoluto(double x) => Math.Abs(x);
+
+        // Método para registrar en historial
+        private void RegistrarHistorial(string operacion, double resultado)
+        {
+            lstHistorial.Items.Insert(0, $"{DateTime.Now:HH:mm:ss} - {operacion} = {resultado}");
+            if (lstHistorial.Items.Count > 10)
+                lstHistorial.Items.RemoveAt(10);
+        }
     }
 }

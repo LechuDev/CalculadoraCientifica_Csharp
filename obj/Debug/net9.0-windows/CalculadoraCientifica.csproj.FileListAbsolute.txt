@@ -1,0 +1,15 @@
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.AssemblyInfoInputs.cache
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.AssemblyInfo.cs
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.csproj.CoreCompileInputs.cache
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.sourcelink.json
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\bin\Debug\net9.0-windows\CalculadoraCientifica.exe
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\bin\Debug\net9.0-windows\CalculadoraCientifica.deps.json
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\bin\Debug\net9.0-windows\CalculadoraCientifica.runtimeconfig.json
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\bin\Debug\net9.0-windows\CalculadoraCientifica.dll
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\bin\Debug\net9.0-windows\CalculadoraCientifica.pdb
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.dll
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\refint\CalculadoraCientifica.dll
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.pdb
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\CalculadoraCientifica.genruntimeconfig.cache
+C:\Users\jafj_\Desktop\Portfolio\C#\Fase1 Fundamenos\CalculadoraCientifica\CalculadoraCientifica_Csharp\obj\Debug\net9.0-windows\ref\CalculadoraCientifica.dll

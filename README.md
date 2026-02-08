@@ -137,21 +137,10 @@ namespace CalculadoraCientifica
     {
         private System.ComponentModel.IContainer components = null;
         private Button btnToggleTheme;
-        private Button btnSumar;
-        private Button btnRestar;
-        private Button btnMultiplicar;
-        private Button btnDividir;
-        private Button btnSeno;
-        private Button btnCoseno;
-        private Button btnTangente;
-        private Button btnRaiz;
-        private Button btnPotencia;
-        private Button btnLog;
-        private Button btnLog10;
-        private Button btnExp;
-        private Button btnAbs;
-        private TextBox txtInput1;
-        private TextBox txtInput2;
+        private Button btnSumar, btnRestar, btnMultiplicar, btnDividir;
+        private Button btnSeno, btnCoseno, btnTangente;
+        private Button btnRaiz, btnPotencia, btnLog, btnLog10, btnExp, btnAbs;
+        private TextBox txtInput1, txtInput2;
         private Label lblResultado;
 
         private void InitializeComponent()
@@ -175,7 +164,7 @@ namespace CalculadoraCientifica
             this.lblResultado = new Label();
 
             // Configuración general
-            this.ClientSize = new System.Drawing.Size(500, 600);
+            this.ClientSize = new System.Drawing.Size(600, 600);
             this.Text = "Calculadora Científica";
 
             // Botón de tema
@@ -192,21 +181,41 @@ namespace CalculadoraCientifica
 
             // Resultado
             this.lblResultado.Location = new System.Drawing.Point(10, 90);
-            this.lblResultado.Size = new System.Drawing.Size(400, 30);
+            this.lblResultado.Size = new System.Drawing.Size(500, 30);
             this.Controls.Add(this.lblResultado);
 
-            // Ejemplo: botón suma
-            this.btnSumar.Text = "Sumar";
-            this.btnSumar.Location = new System.Drawing.Point(10, 130);
-            this.btnSumar.Click += (s, e) =>
-            {
-                double a = double.Parse(txtInput1.Text);
-                double b = double.Parse(txtInput2.Text);
-                lblResultado.Text = $"Resultado: {Sumar(a, b)}";
-            };
-            this.Controls.Add(this.btnSumar);
+            // Botones básicos
+            AddButton(this.btnSumar, "Sumar", 10, 130, (s, e) => lblResultado.Text = $"Resultado: {Sumar(Parse(txtInput1), Parse(txtInput2)}");
+            AddButton(this.btnRestar, "Restar", 120, 130, (s, e) => lblResultado.Text = $"Resultado: {Restar(Parse(txtInput1), Parse(txtInput2)}");
+            AddButton(this.btnMultiplicar, "Multiplicar", 230, 130, (s, e) => lblResultado.Text = $"Resultado: {Multiplicar(Parse(txtInput1), Parse(txtInput2)}");
+            AddButton(this.btnDividir, "Dividir", 340, 130, (s, e) => lblResultado.Text = $"Resultado: {Dividir(Parse(txtInput1), Parse(txtInput2)}");
 
-            // Aquí se agregan los demás botones igual que el de suma...
+            // Botones científicos
+            AddButton(this.btnSeno, "Seno", 10, 180, (s, e) => lblResultado.Text = $"Resultado: {Seno(Parse(txtInput1))}");
+            AddButton(this.btnCoseno, "Coseno", 120, 180, (s, e) => lblResultado.Text = $"Resultado: {Coseno(Parse(txtInput1))}");
+            AddButton(this.btnTangente, "Tangente", 230, 180, (s, e) => lblResultado.Text = $"Resultado: {Tangente(Parse(txtInput1))}");
+            AddButton(this.btnRaiz, "Raíz", 340, 180, (s, e) => lblResultado.Text = $"Resultado: {RaizCuadrada(Parse(txtInput1))}");
+            AddButton(this.btnPotencia, "Potencia", 10, 230, (s, e) => lblResultado.Text = $"Resultado: {Potencia(Parse(txtInput1), Parse(txtInput2))}");
+            AddButton(this.btnLog, "Log", 120, 230, (s, e) => lblResultado.Text = $"Resultado: {Logaritmo(Parse(txtInput1))}");
+            AddButton(this.btnLog10, "Log10", 230, 230, (s, e) => lblResultado.Text = $"Resultado: {LogaritmoBase10(Parse(txtInput1))}");
+            AddButton(this.btnExp, "Exp", 340, 230, (s, e) => lblResultado.Text = $"Resultado: {Exponencial(Parse(txtInput1))}");
+            AddButton(this.btnAbs, "Abs", 10, 280, (s, e) => lblResultado.Text = $"Resultado: {ValorAbsoluto(Parse(txtInput1))}");
+        }
+
+        private void AddButton(Button btn, string text, int x, int y, EventHandler handler)
+        {
+            btn.Text = text;
+            btn.Location = new System.Drawing.Point(x, y);
+            btn.Click += handler;
+            this.Controls.Add(btn);
+        }
+
+        private double Parse(TextBox txt)
+        {
+            return double.TryParse(txt.Text, out double val) ? val : 0;
+        }
+    }
+}
         }
     }
 }
